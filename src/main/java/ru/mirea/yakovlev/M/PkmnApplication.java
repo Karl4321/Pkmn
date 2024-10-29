@@ -14,21 +14,6 @@ import java.util.stream.Collectors;
 public class PkmnApplication {
 
     public static void main(String[] args) throws IOException {
-//        PkmnHttpClient pkmnHttpClient = new PkmnHttpClient();
-//        JsonNode card = pkmnHttpClient.getPokemonCard("Phantump", "16","Sword & Shield",60);
-//        System.out.println(card.toPrettyString());
-//
-//        System.out.println(card.findValues("attacks")
-//                .stream()
-//                .map(JsonNode::toPrettyString)
-//                .collect(Collectors.toSet()));
-//
-//        List<String> texts = new ArrayList<>();
-//        card.findValues("attacks")
-//                .forEach(attackNode->attackNode.forEach(attack -> {
-//                    String text = attack.get("text").asText();
-//                    texts.add(text);
-//                }));
 
         String filename = "D:\\Pkmn-master\\src\\main\\resources\\my_card.txt";
         CardImport cardImport = new CardImport();
