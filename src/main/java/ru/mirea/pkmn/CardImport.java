@@ -81,12 +81,12 @@ public class CardImport {
         PkmnHttpClient pkmnHttpClient = new PkmnHttpClient();
 
         JsonNode cardJson = pkmnHttpClient.getPokemonCard(card.getName(),card.getNumber(),card.getGameSet(),card.getHp());
-        System.out.println(cardJson.toPrettyString());
-
-        System.out.println(cardJson.findValues("attacks")
-                .stream()
-                .map(JsonNode::toPrettyString)
-                .collect(Collectors.toSet()));
+//        System.out.println(cardJson.toPrettyString());
+//
+//        System.out.println(cardJson.findValues("attacks")
+//                .stream()
+//                .map(JsonNode::toPrettyString)
+//                .collect(Collectors.toSet()));
 
         List<String> texts = new ArrayList<>();
         cardJson.findValues("attacks")
